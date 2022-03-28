@@ -21,6 +21,7 @@ export function resume() {
             {
                 img: "logo_si.jpg",
                 position: "INTERN SOFTWARE ENGINEER",
+                duration: "Aug 2020-Feb 2021",
                 location: "Software International Corporation (M) Sdn Bhd, WP Kuala Lumpur",
                 responsibilities: [
                     "User Acceptance testing (UAT) on existing application",

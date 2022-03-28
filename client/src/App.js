@@ -13,13 +13,6 @@ class App extends Component {
     console.log(this.data)
   }
 
-  componentDidMount() {
-    /*console.log(this.state);
-    resume().then(data => {
-      this.setState({ resume: data })
-      console.log(data);
-    });*/
-  }
   render() {
     return (
       <div className="App">
@@ -112,7 +105,10 @@ class App extends Component {
                         <img src={"/images/" + work.img} className="mx-auto col-sm-2"
                           style={{ width: 'auto', height: '45px', objectFit: 'cover' }} />
                         <div className="col-sm-10">
-                          <h5 className="card-title mb-0">{work.position}</h5>
+                          <div className="hstack">
+                            <h5 className="card-title mb-0">{work.position}</h5>
+                            <label className="ms-2 mb-1">{" (" + work.duration + ")"}</label>
+                          </div>
                           <div className="hstack">
                             <img src="/images/ic_location.jpg" className=" rounded-circle"
                               style={{ width: '20px', height: 'auto', objectFit: 'cover' }} />
